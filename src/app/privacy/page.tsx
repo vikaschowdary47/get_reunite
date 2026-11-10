@@ -5,7 +5,7 @@ import { CONTACT_EMAIL, OPERATOR } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "What TagBack collects, how messages are screened by AI, who we share data with, how long we keep it, and your choices.",
+  description: "What Reunite collects, how messages are screened by AI, who we share data with, how long we keep it, and your choices.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -13,11 +13,11 @@ export default function Privacy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      intro="TagBack exists so people can reach you without your number. This page explains what we collect, why, who helps us run the service, and the choices you have. We do not sell your data and we do not show ads."
+      intro="Reunite exists so people can reach you without your number. This page explains what we collect, why, who helps us run the service, and the choices you have. We do not sell your data and we do not show ads."
     >
       <Sec title="1. Who is responsible">
         <p>
-          {OPERATOR} operates TagBack and decides how personal information is used. Contact:{" "}
+          {OPERATOR} operates Reunite and decides how personal information is used. Contact:{" "}
           <a className="underline underline-offset-4" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. This policy
           works together with our <Link href="/terms" className="underline underline-offset-4">Terms of Service</Link>.
         </p>
@@ -43,7 +43,7 @@ export default function Privacy() {
           <li>Two cookies for owners: a sign-in session cookie and a short-lived cookie while a code is pending. We do not use advertising or cross-site tracking cookies.</li>
         </ul>
         <p>
-          We do not collect your name, phone number or payment card through TagBack. Payments for physical tags are
+          We do not collect your name, phone number or payment card through Reunite. Payments for physical tags are
           handled by the marketplace or payment service where you buy them, under their policies.
         </p>
       </Sec>
@@ -58,7 +58,7 @@ export default function Privacy() {
 
       <Sec title="4. How we use information">
         <ul>
-          <li>To run TagBack: deliver messages and replies, send sign-in codes and alerts, and show your inbox.</li>
+          <li>To run Reunite: deliver messages and replies, send sign-in codes and alerts, and show your inbox.</li>
           <li>To screen messages: block abuse and spam, rate urgency, translate and draft replies.</li>
           <li>To keep the service safe: rate limits, abuse investigation, enforcing our terms, and meeting legal obligations.</li>
           <li>To improve reliability and fix bugs. We do not use your messages for advertising and we do not sell them.</li>
@@ -81,13 +81,13 @@ export default function Privacy() {
       </Sec>
 
       <Sec title="6. Who we share data with">
-        <p>We share data only with service providers who help us run TagBack, and when the law requires it:</p>
+        <p>We share data only with service providers who help us run Reunite, and when the law requires it:</p>
         <ul>
           <li>Hosting and database providers, to store and serve the app.</li>
           <li>An email delivery provider, to send sign-in codes and alerts to your email address.</li>
           <li>An AI provider, to screen and translate messages, as described above.</li>
           <li>Authorities or other parties when we believe disclosure is required by law or needed to protect people, our users or our service from harm or fraud.</li>
-          <li>A buyer or successor if TagBack is sold or reorganized, under terms that protect your data.</li>
+          <li>A buyer or successor if Reunite is sold or reorganized, under terms that protect your data.</li>
         </ul>
         <p>These providers may be located outside your country, including in the United States.</p>
       </Sec>
@@ -108,7 +108,7 @@ export default function Privacy() {
           <li>Delete your account in Settings to erase your messages and deactivate your tags.</li>
           <li>Ask us for a copy of your data, a correction, or deletion by emailing {CONTACT_EMAIL}. We may need to confirm it is you by replying from your account email.</li>
           <li>Depending on where you live (for example California, other US states, the EU or UK), you may have extra rights such as access, portability, objection or complaint to a regulator. We will honor these as the law requires. We do not sell or share personal information for cross-context behavioral advertising.</li>
-          <li>Finders can use TagBack without an account, and do not have to share location or contact details.</li>
+          <li>Finders can use Reunite without an account, and do not have to share location or contact details.</li>
         </ul>
       </Sec>
 
@@ -122,7 +122,7 @@ export default function Privacy() {
 
       <Sec title="10. Children">
         <p>
-          TagBack is not directed to children under 13, and owners must be at least 18 (or use it with a parent or
+          Reunite is not directed to children under 13, and owners must be at least 18 (or use it with a parent or
           guardian). We do not knowingly collect personal information from children under 13. If you think a child has sent
           us information, email {CONTACT_EMAIL} and we will delete it.
         </p>
@@ -133,7 +133,7 @@ export default function Privacy() {
           We protect data with measures such as hashed codes and sessions, signed links, access checks on every account
           page, encryption in transit, and rate limits. No system is completely secure, and email can be intercepted or
           misdelivered, so we cannot guarantee absolute security. Anyone with access to your email inbox can sign in to
-          your TagBack account, and alert emails contain a link that opens your tag&apos;s inbox, so keep your email account
+          your Reunite account, and alert emails contain a link that opens your tag&apos;s inbox, so keep your email account
           secure and do not forward those emails.
         </p>
       </Sec>

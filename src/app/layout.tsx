@@ -21,24 +21,24 @@ const mono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(appUrl()),
   title: {
-    default: "TagBack: let anyone reach you without your number",
-    template: "%s · TagBack",
+    default: "Reunite: let anyone reach you without your number",
+    template: "%s · Reunite",
   },
   description:
     "QR tags for your car, luggage, laptop, keys and pet. Someone scans, messages you, and your number stays private. AI filters abuse, flags what is urgent and translates.",
-  applicationName: "TagBack",
+  applicationName: "Reunite",
   keywords: ["QR code sticker", "windshield contact sticker", "blocked in car sticker", "luggage tag", "laptop sticker", "pet tag", "lost and found QR"],
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    siteName: "TagBack",
-    title: "TagBack: let anyone reach you without your number",
+    siteName: "Reunite",
+    title: "Reunite: let anyone reach you without your number",
     description: "Scan, message, reply. QR tags with AI that filters abuse, flags urgency and translates.",
     url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TagBack: let anyone reach you without your number",
+    title: "Reunite: let anyone reach you without your number",
     description: "QR tags for your car, bag, laptop, keys and pet. Your number stays private.",
   },
   robots: { index: true, follow: true },

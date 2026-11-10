@@ -33,7 +33,7 @@ function HeroSticker() {
       <p className="text-[1.35rem] font-semibold leading-none tracking-[-0.04em] sm:text-2xl">Blocked in?</p>
       <p className="mt-1 text-[0.7rem] text-white/75">Scan to message the owner</p>
       <div className="relative mt-2.5 aspect-square overflow-hidden rounded-2xl bg-white p-1.5">
-        <QrSvg value={`${appUrl()}/#try`} label="QR code on a sample TagBack sticker" className="h-full w-full" />
+        <QrSvg value={`${appUrl()}/#try`} label="QR code on a sample Reunite sticker" className="h-full w-full" />
         <div className="sweep pointer-events-none absolute inset-x-0 top-0 h-1 bg-mint shadow-[0_0_14px_3px_var(--color-mint)]" />
       </div>
       <p className="mt-2 text-[0.65rem] text-white/70">No app. Your number stays private.</p>
@@ -80,18 +80,18 @@ function PhoneMock() {
 const JSON_LD = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "Organization", name: "TagBack", url: appUrl() },
+    { "@type": "Organization", name: "Reunite", url: appUrl() },
     {
       "@type": "WebSite",
-      name: "TagBack",
+      name: "Reunite",
       url: appUrl(),
       description: "QR tags that let anyone reach you without your number.",
     },
     {
       "@type": "Product",
-      name: "TagBack QR contact sticker",
+      name: "Reunite QR contact sticker",
       description: "A QR sticker for your car, luggage, laptop, keys or pet. Finders message you; your number stays private.",
-      brand: { "@type": "Brand", name: "TagBack" },
+      brand: { "@type": "Brand", name: "Reunite" },
       offers: { "@type": "Offer", priceCurrency: "USD", price: "9.99", availability: "https://schema.org/InStock" },
     },
   ],
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="stage grid gap-8 px-6 pb-10 pt-10 sm:px-10 lg:min-h-[34rem] lg:items-center" aria-label="What happens when someone scans a TagBack sticker">
+          <div className="stage grid gap-8 px-6 pb-10 pt-10 sm:px-10 lg:min-h-[34rem] lg:items-center" aria-label="What happens when someone scans a Reunite sticker">
             <div className="lg:ml-auto lg:mr-2">
               <PhoneMock />
             </div>

@@ -1,4 +1,4 @@
-# TagBack
+# Reunite
 
 QR contact tags for cars, luggage, laptops, keys and pets. Someone scans the sticker, types a message, and the owner gets an alert by email. Nobody's phone number is exposed, and neither side needs an app.
 
@@ -50,7 +50,7 @@ Import is safe to repeat: codes that already exist are skipped. `APP_SECRET` mus
 
 Netlify cannot run this app from a dragged-in zip or folder (that only works for static sites). Deploy from a Git repository or with the Netlify CLI.
 
-1. Create a free Turso database (`turso db create tagback`, then `turso db tokens create tagback`). Serverless hosting has no writable disk, so the app refuses to start on Netlify without `TURSO_DATABASE_URL`.
+1. Create a free Turso database (`turso db create reunite`, then `turso db tokens create reunite`). Serverless hosting has no writable disk, so the app refuses to start on Netlify without `TURSO_DATABASE_URL`.
 2. Create a Resend account, verify your sending domain, and create an API key. Without it, sign-in emails cannot be sent in production.
 3. Push the project to GitHub, then in Netlify choose Add new site > Import an existing project. `netlify.toml` already sets the build command and Node 22.
 4. Under Site configuration > Environment variables, set everything in `.env.example`: `APP_URL` (the final address, with no trailing slash), `APP_SECRET`, `ADMIN_TOKEN`, `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN`, `RESEND_API_KEY`, `RESEND_FROM`, and `ANTHROPIC_API_KEY`. Set `APP_URL` before the first build, and redeploy after changing any variable.

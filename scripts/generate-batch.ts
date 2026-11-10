@@ -1,5 +1,5 @@
 /**
- * Generate a batch of unique TagBack stickers.
+ * Generate a batch of unique Reunite stickers.
  *
  *   npm run batch -- --count 50 --kind car --batch first-run --mirror
  *   --kind: car | luggage | laptop | keys | pet
@@ -98,7 +98,7 @@ function drawSticker(doc: PDFKit.PDFDocument, ox: number, oy: number, code: stri
     doc.fillColor(t.fg).font("Helvetica-Bold").fontSize(small ? 6.5 : 8.5).text(p.footer, 8, y + (small ? 9 : 16), { width: w - 16, align: "center", lineBreak: false });
   }
   if (p.showCode) {
-    doc.font("Courier-Bold").fontSize(8.5).fillColor(t.fg).text(`tagback  ${code}`, 8, h - Math.max(inset + 15, 22), { width: w - 16, align: "center", lineBreak: false });
+    doc.font("Courier-Bold").fontSize(8.5).fillColor(t.fg).text(`reunite  ${code}`, 8, h - Math.max(inset + 15, 22), { width: w - 16, align: "center", lineBreak: false });
   }
 
   // cut contour (spot-colour style hairline), same shape as the sticker
@@ -109,7 +109,7 @@ function drawSticker(doc: PDFKit.PDFDocument, ox: number, oy: number, code: stri
 function stickersPdf(file: string, tags: { code: string }[], a: Args, base: string) {
   const p = KINDS[a.kind].print;
   const mirror = a.mirror && p.surface === "inside-glass";
-  const doc = new PDFDocument({ size: "LETTER", margin: 0, info: { Title: `TagBack ${a.kind} ${a.batch}` } });
+  const doc = new PDFDocument({ size: "LETTER", margin: 0, info: { Title: `Reunite ${a.kind} ${a.batch}` } });
   doc.pipe(fs.createWriteStream(file));
   const w = p.wIn * IN;
   const h = p.hIn * IN;
@@ -162,7 +162,7 @@ function qrLabelsPdf(file: string, tags: { code: string }[], base: string) {
 }
 
 function cardsPdf(file: string, tags: { code: string; pin: string }[], base: string) {
-  const doc = new PDFDocument({ size: "LETTER", margin: 0, info: { Title: "TagBack activation cards" } });
+  const doc = new PDFDocument({ size: "LETTER", margin: 0, info: { Title: "Reunite activation cards" } });
   doc.pipe(fs.createWriteStream(file));
   const w = 3.5 * IN;
   const h = 2 * IN;
@@ -174,7 +174,7 @@ function cardsPdf(file: string, tags: { code: string; pin: string }[], base: str
     const x = startX + (slot % 2) * w;
     const y = startY + Math.floor(slot / 2) * h;
     doc.rect(x, y, w, h).lineWidth(0.4).stroke("#999999");
-    doc.fillColor(GREEN).font("Helvetica-Bold").fontSize(13).text("TagBack", x + 14, y + 12);
+    doc.fillColor(GREEN).font("Helvetica-Bold").fontSize(13).text("Reunite", x + 14, y + 12);
     doc.fillColor(INK).font("Helvetica").fontSize(8.5).text("Scan your sticker, or go to", x + 14, y + 34);
     doc.font("Helvetica-Bold").text(`${base.replace(/^https?:\/\//, "")}/activate`, x + 14, y + 45);
     doc.font("Helvetica").fontSize(8.5).text("Tag code", x + 14, y + 68);

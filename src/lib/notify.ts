@@ -15,7 +15,7 @@ export async function sendEmail(to: string, subject: string, body: string): Prom
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from: process.env.RESEND_FROM ?? "TagBack <alerts@example.com>",
+        from: process.env.RESEND_FROM ?? "Reunite <alerts@example.com>",
         to,
         subject,
         text: body,
@@ -44,7 +44,7 @@ export async function sendManageLink(to: string, label: string, token: string) {
   const link = `${appUrl()}/m/${token}`;
   await sendEmail(
     to,
-    `Your TagBack inbox for ${label}`,
+    `Your Reunite inbox for ${label}`,
     `Your tag "${label}" is active.\n\nYour private inbox link (keep it safe, anyone with it can read your messages):\n${link}\n`,
   );
 }
@@ -67,7 +67,7 @@ export async function sendOwnerAlert(opts: {
 export async function sendOtpEmail(to: string, code: string): Promise<boolean> {
   return sendEmail(
     to,
-    `${code} is your TagBack code`,
-    `Your TagBack sign-in code is ${code}\n\nIt expires in 10 minutes. If you did not ask for it, you can ignore this email.\n`,
+    `${code} is your Reunite code`,
+    `Your Reunite sign-in code is ${code}\n\nIt expires in 10 minutes. If you did not ask for it, you can ignore this email.\n`,
   );
 }

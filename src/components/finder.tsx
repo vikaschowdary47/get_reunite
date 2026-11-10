@@ -5,7 +5,7 @@ export function FinderCard({ kind, label, note }: { kind: TagKind; label: string
   return (
     <div className="plaque bg-sign text-white">
       <div className="grid gap-2 p-6">
-        <p className="text-lg font-semibold">You scanned a TagBack for this {KINDS[kind].noun}</p>
+        <p className="text-lg font-semibold">You scanned a Reunite for this {KINDS[kind].noun}</p>
         <h1 className="text-4xl font-semibold sm:text-5xl">{label}</h1>
         {note && <p className="text-lg">{note}</p>}
       </div>

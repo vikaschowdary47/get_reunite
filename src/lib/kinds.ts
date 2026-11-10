@@ -1,5 +1,5 @@
 /**
- * Everything that differs between TagBack products lives here: the words a
+ * Everything that differs between Reunite products lives here: the words a
  * finder sees, the AI context, and the print specs. Keep it free of
  * server-only imports so client components can use it.
  */

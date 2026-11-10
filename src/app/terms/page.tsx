@@ -5,7 +5,7 @@ import { CONTACT_EMAIL, GOVERNING_LAW, OPERATOR } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The rules for using TagBack tags and the TagBack web app, including what our spam and abuse checks can and cannot do.",
+  description: "The rules for using Reunite tags and the Reunite web app, including what our spam and abuse checks can and cannot do.",
   alternates: { canonical: "/terms" },
 };
 
@@ -13,25 +13,25 @@ export default function Terms() {
   return (
     <LegalPage
       title="Terms of Service"
-      intro="Plain-language rules for using TagBack. Please read the section on message filtering: we check every message, but no filter is perfect, and some unwanted messages can still reach you."
+      intro="Plain-language rules for using Reunite. Please read the section on message filtering: we check every message, but no filter is perfect, and some unwanted messages can still reach you."
     >
       <Sec title="1. Who we are and what you agree to">
         <p>
-          TagBack is operated by {OPERATOR} (&quot;TagBack&quot;, &quot;we&quot;, &quot;us&quot;). These terms apply to the
-          TagBack website and web app, the QR stickers and tags we sell, and the pages a QR code opens. By scanning a
+          Reunite is operated by {OPERATOR} (&quot;Reunite&quot;, &quot;we&quot;, &quot;us&quot;). These terms apply to the
+          Reunite website and web app, the QR stickers and tags we sell, and the pages a QR code opens. By scanning a
           tag, sending a message, creating an account or using a tag, you agree to these terms and to our{" "}
           <Link href="/privacy" className="underline underline-offset-4">Privacy Policy</Link>. If you do not agree,
-          do not use TagBack.
+          do not use Reunite.
         </p>
         <p>
-          Two kinds of people use TagBack: <strong>owners</strong> (who register and put a tag on something) and{" "}
+          Two kinds of people use Reunite: <strong>owners</strong> (who register and put a tag on something) and{" "}
           <strong>finders</strong> (anyone who scans a tag). These terms apply to both.
         </p>
       </Sec>
 
-      <Sec title="2. What TagBack does">
+      <Sec title="2. What Reunite does">
         <p>
-          A TagBack tag carries a QR code. When someone scans it, they can send a message to the owner through a web
+          A Reunite tag carries a QR code. When someone scans it, they can send a message to the owner through a web
           page, without seeing the owner&apos;s name, email address or phone number. The owner reads the message in the
           app or by email and can reply. We may use automated tools, including artificial intelligence, to screen,
           sort, summarize, translate and suggest replies to messages.
@@ -58,7 +58,7 @@ export default function Terms() {
 
       <Sec title="4. Not for emergencies, and no guarantees">
         <ul>
-          <li>TagBack is not an emergency service. If someone is in danger, call your local emergency number.</li>
+          <li>Reunite is not an emergency service. If someone is in danger, call your local emergency number.</li>
           <li>We do not guarantee that a message will be sent, delivered, seen or answered, that an email alert will arrive (email can be delayed, filtered to spam or lost), or that our service will be uninterrupted or error-free.</li>
           <li>We do not guarantee that a lost item, pet, vehicle or person will be found or returned, that anyone will scan a tag, or that a finder is honest or acting in good faith.</li>
           <li>A tag can fail: stickers wear, fade, peel, get covered, damaged or removed, and a damaged QR code may not scan.</li>
@@ -67,7 +67,7 @@ export default function Terms() {
 
       <Sec title="5. Accounts and tags">
         <ul>
-          <li>You sign in with a one-time code sent to your email. You are responsible for your email account and for everything done through your TagBack account. Tell us if you think someone else has access.</li>
+          <li>You sign in with a one-time code sent to your email. You are responsible for your email account and for everything done through your Reunite account. Tell us if you think someone else has access.</li>
           <li>Each tag has a code and a PIN printed on its card. Anyone who has both can register the tag, so keep the card private. We cannot reset ownership of a tag if someone else registers it first, though we may try to help at our discretion.</li>
           <li>You must provide a working email address and keep the information you enter accurate. Do not put sensitive personal details in a tag name or note: finders can see them.</li>
           <li>You must be at least 18, or have a parent or guardian who agrees to these terms on your behalf. Finders under 18 should have a parent or guardian&apos;s permission.</li>
@@ -113,7 +113,7 @@ export default function Terms() {
 
       <Sec title="9. Third-party services">
         <p>
-          TagBack relies on other companies to run, for example hosting, a database, email delivery, an AI model
+          Reunite relies on other companies to run, for example hosting, a database, email delivery, an AI model
           provider and a marketplace or payment platform used to sell tags. They can have outages or errors that affect
           you. We are not responsible for them. Their handling of data is described in our{" "}
           <Link href="/privacy" className="underline underline-offset-4">Privacy Policy</Link>. Links in messages lead
@@ -123,7 +123,7 @@ export default function Terms() {
 
       <Sec title="10. Our content and your content">
         <p>
-          TagBack, its design, software and branding belong to us. We give you a limited, personal, revocable licence to
+          Reunite, its design, software and branding belong to us. We give you a limited, personal, revocable licence to
           use the service as intended. You keep ownership of what you write. You give us permission to store, process,
           screen and display it as needed to run the service, including sending it to our service providers and
           automated tools, and to keep records needed for safety, abuse prevention and legal compliance.
@@ -149,7 +149,7 @@ export default function Terms() {
           conduct of any finder, owner or third party.
         </p>
         <p>
-          Our total liability for any claim relating to TagBack is limited to the greater of the amount you paid us for
+          Our total liability for any claim relating to Reunite is limited to the greater of the amount you paid us for
           the tag or service in the 12 months before the claim, or US$50. Some places do not allow certain limits, so
           these may not fully apply to you. Nothing here limits liability that cannot be limited by law, such as for
           fraud or for death or personal injury caused by our negligence.
@@ -168,7 +168,7 @@ export default function Terms() {
         <p>
           We may change the service, add or remove features and tag types, or update these terms. If a change is
           material we will post it here with a new date and may notify you in the app or by email. Continued use after a
-          change means you accept it. You can stop using TagBack at any time by deleting your tags and account. We may
+          change means you accept it. You can stop using Reunite at any time by deleting your tags and account. We may
           suspend or end access at any time, including for a breach of these terms.
         </p>
       </Sec>
@@ -187,7 +187,7 @@ export default function Terms() {
         <p>
           If part of these terms is unenforceable, the rest stays in force. If we do not enforce a term, that is not a
           waiver. You may not transfer your rights under these terms; we may transfer ours as part of a sale or
-          reorganization. These terms and the Privacy Policy are the whole agreement between you and us about TagBack.
+          reorganization. These terms and the Privacy Policy are the whole agreement between you and us about Reunite.
         </p>
       </Sec>
 

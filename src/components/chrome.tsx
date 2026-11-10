@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link href="/" className="inline-flex items-center gap-2.5 font-semibold tracking-tight" aria-label="TagBack home">
+    <Link href="/" className="inline-flex items-center gap-2.5 font-semibold tracking-tight" aria-label="Reunite home">
       <svg width="30" height="30" viewBox="0 0 34 34" aria-hidden="true">
         <defs>
           <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
@@ -15,7 +15,7 @@ export function Logo({ light = false }: { light?: boolean }) {
         <path d="M9 9h6v6H9zM19 9h6v6h-6zM9 19h6v6H9z" fill="#fff" />
         <path d="M19 19h2.8v2.8H19zM22.2 22.2H25V25h-2.8z" fill="#62e3b1" />
       </svg>
-      <span className={`text-[1.2rem] tracking-[-0.03em] ${light ? "text-white" : ""}`}>TagBack</span>
+      <span className={`text-[1.2rem] tracking-[-0.03em] ${light ? "text-white" : ""}`}>Reunite</span>
     </Link>
   );
 }
@@ -35,7 +35,7 @@ export function Footer() {
   return (
     <footer className="mt-auto">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-8 text-sm text-muted">
-        <p>TagBack. Get reached without sharing your number.</p>
+        <p>Reunite. Get reached without sharing your number.</p>
         <nav className="flex flex-wrap gap-x-6 gap-y-2 font-medium">
           <Link href="/activate" className="hover:text-ink">
             Activate a tag
