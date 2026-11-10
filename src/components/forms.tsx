@@ -138,7 +138,7 @@ export function MessageForm({ code, kind = "car" }: { code: string; kind?: TagKi
           required
           placeholder={KINDS[kind].messagePlaceholder}
         />
-        <p className="hint mt-1">Any language works. They get it in theirs.</p>
+        <p className="hint mt-1">Any language works. Include what the owner needs, like where you are and how to reach you. You can send another message anytime by scanning the code again.</p>
       </div>
       <div>
         <label className="label" htmlFor="where">
